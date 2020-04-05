@@ -1,5 +1,0 @@
-print(type(2))
-print(type("hola"))
-print(type(2+3))
-print(type("h"))
-print(type(2.34))
