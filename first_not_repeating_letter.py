@@ -14,9 +14,7 @@ def first_not_repeating_char(char_sequence):
 
     #declamramos una variable que almacena una tupla de que letras vimos una vez
     final_letters = []
-    for key, value in seen_letters.items():
-    	if value[1] == 1:
-    		final_letters.append( (key, value[0]) )
+    [final_letters.append( (key, value[0]) ) for key, value in seen_letters.items() if value[1] == 1]
 
     #Definimos una nuevsa variable que almacenara el primer elemento de la lista de forma ordenada
     not_repeated_letters = sorted(final_letters, key=lambda value: value[1])
